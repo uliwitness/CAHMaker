@@ -219,7 +219,7 @@ enum CAHLineType
 			builtWhiteBack = YES;
 		}
 		
-		[self saveImage: self.cardImageView.image name: [NSString stringWithFormat: @"card_%ld", x +1]];
+		[self saveImage: self.cardImageView.image name: [NSString stringWithFormat: @"card_%@_%ld", [currCard[@"color"] lowercaseString], x +1]];
 	}
 }
 
